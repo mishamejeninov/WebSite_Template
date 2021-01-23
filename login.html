@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600,600i&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./Image/login.png" />
+    <link rel="stylesheet" href="./css/login.css">
+    <title> LogIn </title>
+</head>
+
+<body>
+
+    <header>
+
+        <h2 class="logo"> Balance Academy </h2>
+
+        <input type="checkbox" id="chk">
+
+        <label for="chk" class="show-menu-btn">
+
+            <i class="fas fa-ellipsis-h"></i>
+
+        </label>
+
+        <ul class="menu">
+
+            <a href="main.html"><i class="fas fa-home"></i>Home</a>
+            <a href="Contact.html" class="modal-open"><i class="fas fa-pen"></i>Contact</a>
+
+            <label for="chk" class="hide-menu-btn">
+
+                <i class="fas fa-times"></i>
+
+            </label>
+
+        </ul>
+
+    </header>
+
+    <div class="container">
+
+        <div class="img">
+
+            <img src="./Image/undraw_mobile_user_7oqo.png" alt="">
+
+        </div>
+
+        <div class="loginContainer">
+
+            <form class="form" action="https://www.w3schools.com/action_page.php" method="GET">
+
+                <img class="avatar" src="./Image/undraw_profile_pic_ic5t.png" alt="">
+
+                <h2 class="title"> Welcome </h2>
+
+                <div class="inputGroup one focus">
+
+                    <div class="i">
+
+                        <i class="fas fa-user"></i>
+
+                    </div>
+
+                    <div>
+
+                        <input type="text" name="Login User" maxlength="10" id="loginuser" required>
+                        <label for="loginUser"> User Name </label>
+
+                    </div>
+
+                </div>
+
+                <div class="inputGroup tow focus">
+
+                    <div class="i">
+
+                        <i class="fas fa-lock"></i>
+
+                    </div>
+
+                    <div>
+
+                        <input type="password" name="Login Password" maxlength="10" id="loginuPassword" required>
+                        <label for="loginPassword" required> Password </label>
+
+                    </div>
+
+                </div>
+
+                <div class="forgetSign">
+
+                    <a href="#signIn" class="SignIn"> SignIn </a>
+                    <a href="#forgotPw" class="forgetPassword"> Forget Password </a>
+
+                </div>
+
+                <input type="submit" class="btn" value="Login">
+
+            </form>
+
+            <div id="forgotPw">
+
+                <form class="form" action="https://www.w3schools.com/action_page.php" method="GET">
+
+                    <a href="#" class="close"> &times; </a>
+
+                    <h2> Reset Password </h2>
+
+                    <div class="inputGroup focus">
+
+                        <div class="i">
+
+                            <i class="fas fa-envelope"></i>
+
+                        </div>
+
+                        <div>
+
+                            <input type="email" name="Email" id="email" required>
+                            <label for="email"> Email </label>
+
+                        </div>
+
+                    </div>
+
+                    <input type="submit" value="Submit" class="btn">
+
+                </form>
+            </div>
+
+            <div id="signIn">
+
+                <form class="form" action="https://www.w3schools.com/action_page.php" method="GET">
+
+                    <a href="#" class="close"> &times; </a>
+
+                    <h2> Sign In </h2>
+
+                    <div class="inputGroup focus">
+
+                        <div class="i">
+
+                            <i class="fas fa-user"></i>
+
+                        </div>
+
+                        <div>
+
+                            <input type="text" name="First Name" maxlength="10" id="firstName" required>
+                            <label for="firstName"> First Name </label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="inputGroup focus">
+
+                        <div class="i">
+
+                            <i class="fas fa-user"></i>
+
+                        </div>
+
+                        <div>
+
+                            <input type="text" name="Last Name" maxlength="10" id="lastName" required>
+                            <label for="lastName"> Last Name </label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="inputGroup focus">
+
+                        <div class="i">
+
+                            <i class="fas fa-phone"></i>
+
+                        </div>
+
+                        <div>
+
+                            <input type="tel" name="Phone" maxlength="10" id="tel" required>
+                            <label for="tel"> Phone </label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="inputGroup focus">
+
+                        <div class="i">
+
+                            <i class="fas fa-envelope"></i>
+
+                        </div>
+
+                        <div>
+
+                            <input type="email" name="Email" id="email" required>
+                            <label for="email"> Email </label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="inputGroup focus">
+
+                        <div class="i">
+
+                            <i class="fas fa-lock"></i>
+
+                        </div>
+
+                        <div>
+
+                            <input type="password" name="loginPassword" maxlength="10" id="loginuPassword" required>
+                            <label for="loginPassword" required> Password </label>
+
+                        </div>
+
+                    </div>
+
+                    <input type="submit" value="Submit" class="btn">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

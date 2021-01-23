@@ -1,0 +1,671 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  background: url(../Image/University_of_Otago.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Poppins";
+  font-size: 62.5%;
+  height: 50%;
+}
+
+.main {
+  width: 100%;
+  min-height: calc(100vh - 100px - 319px);
+}
+
+.main .to-top {
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  z-index: 5;
+}
+
+.main .to-top:hover, .main .to-top :focus {
+  background-color: #333333;
+  color: #fff;
+}
+
+.main .active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.main .containerLogoAboutUs {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .logoInYan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .logoInYan .divBalance {
+  width: 115px;
+  height: 80px;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .logoInYan .divBalance .balance {
+  margin-top: 10px;
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .logoInYan div {
+  width: 150px;
+  height: 150px;
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .logoInYan div .academy {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .logoInYan div .academy .loading {
+  width: 150px;
+  height: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  border-top: 10px solid #0025fa;
+  -webkit-animation: a1 2s linear infinite;
+          animation: a1 2s linear infinite;
+  position: absolute;
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .logoInYan div .academy .loading::before {
+  content: '';
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .logoInYan div .academy .loading::after {
+  content: '';
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .logoInYan div .academy .loading::before {
+  border-top: 10px solid #0025fa;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .logoInYan div .academy .loading::after {
+  border-top: 10px solid #0025fa;
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .logoInYan div .academy .loading span {
+  position: absolute;
+  top: -10px;
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  text-align: center;
+  line-height: 200px;
+  -webkit-animation: a2 2s linear infinite;
+          animation: a2 2s linear infinite;
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .logoInYan div .academy .loading span .inyan {
+  width: 150px;
+  height: 150px;
+}
+
+@-webkit-keyframes a1 {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes a1 {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes a2 {
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes a2 {
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .logoInYan .divAcademy {
+  width: 120px;
+  height: 80px;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .logoInYan .divAcademy .academyTitle {
+  margin-top: 10px;
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .text {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.main .containerLogoAboutUs .firstContainerInYanText .text span .whyChangeNeeds {
+  font-size: 20px;
+}
+
+.main .containerLogoAboutUs .secondContainerInYanText .containerLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .containerLogoAboutUs .secondContainerInYanText .containerLogo .logo {
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.main .containerLogoAboutUs .secondContainerInYanText .containerLogo .logo img {
+  width: 200px;
+  height: 200px;
+}
+
+.main .containerLogoAboutUs .secondContainerInYanText .vision {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.main .containerLogoAboutUs .secondContainerInYanText .vision span .whyChangeNeeds {
+  font-size: 20px;
+}
+
+.main .containerLogoAboutUs .needsChange {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.main .containerLogoAboutUs .needsChange span .whyChangeNeeds {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .main .containerLogoAboutUs .balance {
+    font-size: 15px;
+  }
+  .main .containerLogoAboutUs .academyTitle {
+    font-size: 15px;
+  }
+}
+
+.main .video {
+  width: 100%;
+  height: 55vh;
+}
+
+.main .video section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.main .video section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .video section .navigation {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .video section .navigation .videoImg {
+  list-style: none;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 3px 3px 0;
+  opacity: 0.7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 95px;
+}
+
+.main .video section .navigation .videoImg:hover {
+  opacity: 1;
+}
+
+.main .video section .navigation .videoImg img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .video section .navigation .videoImg img:hover {
+  width: 100px;
+  height: 100px;
+}
+
+.main .swiper-container {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.main .swiper-container .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  width: 300px;
+  height: 500px;
+  background: #756b6b;
+}
+
+.main .swiper-container .swiper-slide .card {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  background: #262626;
+}
+
+.main .swiper-container .swiper-slide .card input {
+  opacity: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  outline: none;
+  z-index: 10;
+}
+
+.main .swiper-container .swiper-slide .card input:checked ~ .toggle {
+  -webkit-box-shadow: 0 0 0 500px #9c27b0;
+          box-shadow: 0 0 0 500px #9c27b0;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.main .swiper-container .swiper-slide .card input:checked ~ .details {
+  opacity: 1;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.main .swiper-container .swiper-slide .card .toggle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  outline: none;
+  z-index: 10;
+  pointer-events: none;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+  line-height: 50px;
+  font-size: 35px;
+  -webkit-box-shadow: 0 0 0 0px #9c27b0;
+          box-shadow: 0 0 0 0px #9c27b0;
+}
+
+.main .swiper-container .swiper-slide .card .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main .swiper-container .swiper-slide .card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  font-size: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 11;
+  pointer-events: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.main .swiper-container .swiper-slide .card .details .slideTitle {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.main .swiper-container .swiper-slide .card .details .slideTheme {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.main .swiper-container .swiper-slide .card .details .slideSocialMedia {
+  width: 100%;
+}
+
+.main .swiper-container .swiper-slide .card .details .slideSocialMedia .icon {
+  text-decoration: none;
+}
+
+.main .swiper-container .swiper-slide .card .details .slideSocialMedia .icon i {
+  height: 40px;
+  width: 40px;
+  margin: 20px 5px;
+  padding: 10px 10px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid gray;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main .coursesContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.main .coursesContainer .courses {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 1px 5px 1px 5px;
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+  background: #262626;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.main .coursesContainer .courses:hover {
+  -webkit-box-shadow: 0 10px 15px 0 #000;
+          box-shadow: 0 10px 15px 0 #000;
+}
+
+.main .coursesContainer .courses .coursesImg {
+  width: 100%;
+}
+
+.main .coursesContainer .courses .coursesImg img {
+  width: 100%;
+  height: 300px;
+}
+
+.main .coursesContainer .courses .coursesTitle {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.main .priceContainer {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.main .priceContainer .col {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main .priceContainer .col .price-box {
+  background: #fff;
+  color: #555;
+  list-style-type: none;
+  border: 1px solid #555;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main .priceContainer .col .price-box:hover,
+.main .priceContainer .col .price-box .price-box.best {
+  -webkit-box-shadow: 0 10px 15px 0 #000;
+          box-shadow: 0 10px 15px 0 #000;
+}
+
+.main .priceContainer .col .price-box .header {
+  background-color: #000;
+  color: #fff;
+  font-size: 25px;
+}
+
+.main .priceContainer .col .price-box .header-green {
+  background-color: #4CAf50;
+}
+
+.main .priceContainer .col .price-box li {
+  padding: 20px;
+  font-size: 20px;
+  border-bottom: 1px solid #eeeeee;
+  text-align: center;
+}
+
+.main .priceContainer .col .price-box .emph {
+  background-color: #f4f4f4;
+  font-size: 20px;
+}
+
+.main .priceContainer .col .price-box .emph .button {
+  background-size: 200%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#32be8f), color-stop(#38d39f), to(#32be8f));
+  background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+  border: none;
+  color: #fff;
+  border-radius: 40px;
+  padding: 10px 50px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.main .priceContainer .col .price-box .emph .button:hover {
+  background-position: right;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 980px) {
+  .main #back-to-top-btn {
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+  }
+  .main .coursesContainer .courses {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main #back-to-top-btn {
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    bottom: 6px;
+    right: 6px;
+  }
+  .main .coursesContainer .courses {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  .main .priceContainer .col {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main .video section .navigation .videoImg {
+    margin: 0 0px;
+  }
+  .main .video section .navigation .videoImg img {
+    width: 70px;
+    height: 70px;
+  }
+  .main .video section .navigation .videoImg img:hover {
+    width: 75px;
+    height: 75px;
+  }
+}
+/*# sourceMappingURL=Main.css.map */
